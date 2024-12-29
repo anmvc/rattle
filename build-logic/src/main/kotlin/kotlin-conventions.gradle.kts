@@ -11,13 +11,3 @@ kotlin {
 dependencies {
   testImplementation(kotlin("test"))
 }
-
-spotless {
-  kotlin {
-    ktfmt()
-  }
-
-  kotlinGradle {
-    ktfmt()
-  }
-}

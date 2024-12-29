@@ -4,12 +4,11 @@ plugins {
   id("base-conventions")
   id("java-library")
   id("net.kyori.indra")
-  id("com.diffplug.spotless")
 }
 
 indra {
   javaVersions {
-    target(19)
+    target(21)
     previewFeaturesEnabled(true)
   }
 }
@@ -26,10 +25,4 @@ tasks.test {
     "--enable-native-access=ALL-UNNAMED",
   )
   testLogging.exceptionFormat = TestExceptionFormat.FULL
-}
-
-spotless {
-  java {
-    googleJavaFormat()
-  }
 }

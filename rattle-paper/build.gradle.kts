@@ -11,7 +11,7 @@ val minecraft: String = libs.versions.paper.get()
 repositories { maven("https://repo.codemc.io/repository/maven-snapshots/") }
 
 dependencies {
-  paperweight.foliaDevBundle("$minecraft-R0.1-SNAPSHOT")
+  paperweight.paperDevBundle("1.21.4-R0.1-SNAPSHOT")
   api(projects.rattleCommon)
   api(libs.alexandria.paper)
 }
